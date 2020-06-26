@@ -535,7 +535,7 @@ div.blueBarLeft{
 /* Responsive Footer */
 
 @media (min-width: 1200px) {
-    .footer ul li.nav-item, .footer ul.footer-social {
+    .footer ul li.nav-item, .footer li.footer-social {
         line-height: 1.8rem;
         align-content: center;
     }
@@ -544,8 +544,8 @@ div.blueBarLeft{
         letter-spacing: 2px;
     }
 
-    .footer ul.footer-social {
-        margin-left: 25rem;
+    .footer ul li.footer-social {
+        margin-left: 50rem;
     }
 
     .footer ul li.nav-item a.nav-link:hover {
