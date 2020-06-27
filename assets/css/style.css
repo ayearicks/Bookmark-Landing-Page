@@ -53,20 +53,20 @@ p {
     padding: 1.5rem;
 }
 
-.main nav #top-Nav ul li a {
+#top-Nav ul li a {
     color: var(--white);
     text-align: center;
     letter-spacing: 2px;
 }
 
-.main nav #top-Nav ul li a.login-btn {
+#top-Nav ul li a.login-btn {
     border: 3px solid var(--white);
     border-radius: 5px;
     padding: .2rem 2.5rem;
     font-weight: 500;
 }
 
-.main nav #top-Nav ul li.social-nav {
+#top-Nav ul li.social-nav {
     padding-top: 30vh;
     text-align: center;
 }
@@ -79,17 +79,17 @@ p {
         padding: 2.5rem 5rem;
     }
 
-    .main nav.navbar div#top-Nav ul.navbar-nav li.nav-item {
+    #top-Nav ul li {
         border: none !important;
         padding-left: 2.5rem;
     }
     
-    .main nav #top-Nav ul li a {
+    #top-Nav ul li a {
         color: var(--darkDarkBlue);
         text-transform: uppercase;
     }
 
-    .main nav #top-Nav ul li a.login-btn {
+    #top-Nav ul li a.login-btn {
         border-color: var(--softRed);
         background-color: var(--softRed);
         color: var(--white);
@@ -98,16 +98,16 @@ p {
         width: 8rem;
     }
 
-    .main nav #top-Nav ul li.social-nav {
+    #top-Nav ul li.social-nav {
         display: none;
     }
 
     /* Hover and Active States */
-    .main nav #top-Nav ul li a:hover {
+    #top-Nav ul li a:hover {
         color: var(--softRed);
     }
 
-    .main nav #top-Nav ul li a.login-btn:hover {
+    #top-Nav ul li a.login-btn:hover {
         background-color: var(--white);
         border-color: var(--softRed);
         box-shadow: 2.5px 2.5px 10px 0px rgba(0,0,0,0.30);
@@ -117,7 +117,7 @@ p {
 
 
 /* Hero Section */
-.jumbotron.jumbotron-fluid.hero img.hero-img {
+.hero img.hero-img {
     width: 100%;
 }
 
@@ -153,16 +153,16 @@ div.blueBarLeft{
 /* Responsive Hero - Desktop */
 
 @media (min-width: 1200px) {
-    .jumbotron.jumbotron-fluid.hero .heading {
+    .hero .heading {
         align-self: center;
     }
 
-    .jumbotron.jumbotron-fluid.hero .heading .hero-head {
+    .hero .heading .hero-head {
         font-size: 50px;
         padding-bottom: 1rem;
     }
 
-    .jumbotron.jumbotron-fluid.hero .btn-group {
+    .hero .btn-group {
         padding-top: .5rem;
         font-weight: 500;
     }
@@ -175,14 +175,14 @@ div.blueBarLeft{
     }
 
     /* Hover and Active States */
-    .jumbotron.jumbotron-fluid.hero .heading .btn-group a.custom-btn:hover {
+    .hero .heading a.custom-btn:hover {
         background-color: var(--white);
         color: var(--softBlue);
         border-color: var(--softBlue);
         box-shadow: 2.5px 2.5px 5px 0px rgba(83,104,223,0.20);
     }
 
-    .jumbotron.jumbotron-fluid.hero .heading .btn-group a.custom-btn-white:hover {
+    .hero .heading a.custom-btn-white:hover {
         color: var(--darkDarkBlue);
         border-color: var(--darkDarkBlue);
     }
@@ -191,18 +191,15 @@ div.blueBarLeft{
 
 
 /* Features Section */
-.features div.feature-group a.feature-link {
+.features a.feature-link {
     border-color: var(--grayBlue);
     padding: 1.2rem;
-}
-
-.features div.feature-group a.feature-link {
     text-decoration: none;
     color: var(--grayBlue);
 }
 
 /* Class for Javascript Feature Link  */
-.features div.feature-group a.feature-link.current {
+.features a.feature-link.current {
     color: var(--darkDarkBlue);
     padding-bottom: 1rem;
     border-bottom: 5px solid var(--softRed) !important;
@@ -212,19 +209,19 @@ div.blueBarLeft{
 /* Responsive Features Section - Desktop */
 
 @media (min-width: 1200px) {
-    .features div.row p {
+    .features p {
         width: 40%;
         margin: 0 auto;
         padding-bottom: 5rem;
     }    
 
-    .features div.feature-group a.feature-link {
+    .features a.feature-link {
         border-top: none !important;
         border-bottom: 1px solid var(--grayBlue) !important;
     }
 
     /* Hover States */
-    .features div.feature-group a.feature-link:hover {
+    .features a.feature-link:hover {
         color: var(--softRed);
     }
 
@@ -232,16 +229,16 @@ div.blueBarLeft{
 
 
 /* Features - About */
-.container-fluid.about {
+div.about {
     margin-top: 5rem;
 }
 
-.container-fluid.about div.row img.how-to-img {
+.about img.how-to-img {
     max-width: 100%;
 }
 
 /* Blue background for How-to image */
-.container-fluid.about div.row div.bookmarkImg div.blueBarRight{
+.about .blueBarRight{
     min-height: 14rem;
     margin-right: 4rem;
     margin-top: -11.5rem;
@@ -252,13 +249,13 @@ div.blueBarLeft{
 }
 
 
-.container-fluid.about div.row div.searchImg img.how-to-img {
+.searchImg img.how-to-img {
     width: 90%;
     margin-left: 3rem;
     
 }
 
-.container-fluid.about div.row div.searchImg div.blueBarRight {
+.searchImg .blueBarRight {
     min-height: 14rem;
     margin-top: -12.5rem;
     margin-left: -5rem;
@@ -267,13 +264,12 @@ div.blueBarLeft{
     border-bottom-right-radius: 30%;
 }
 
-.container-fluid.about div.row div.shareImg img.how-to-img {
+.shareImg img.how-to-img {
     width: 80%;
     margin-left: 3rem;
-    
 }
 
-.container-fluid.about div.row div.shareImg div.blueBarRight {
+.shareImg div.blueBarRight {
     min-height: 14rem;
     margin-top: -12.5rem;
     margin-left: -9rem;
@@ -282,8 +278,7 @@ div.blueBarLeft{
     border-bottom-right-radius: 30%;
 }
 
-
-.container-fluid.about div.row div.how-to-text {
+.how-to-text {
     align-self: center;
 }
 
@@ -292,15 +287,15 @@ div.blueBarLeft{
 /* Responsive How-to Section */
 
 @media (min-width: 1200px) {
-    .container-fluid.about {
+    .about {
         margin-top: 2.5rem;
     }
 
-    .container-fluid.about div.row div.bookmarkImg img.how-to-img {
+    .about img.how-to-img {
         width: 110%;
     }
 
-    .container-fluid.about div.row div.bookmarkImg div.blueBarRight {
+    .about .blueBarRight {
         min-height: 22.5rem;
         margin-top: -18rem;
         margin-left: -9rem;
@@ -308,12 +303,12 @@ div.blueBarLeft{
         border-bottom-right-radius: 30%;
     }
 
-    .container-fluid.about div.row div.searchImg img.how-to-img {
+    .searchImg img.how-to-img {
         width: 110%;
         margin-left: 4rem;
     }
 
-    .container-fluid.about div.row div.searchImg div.blueBarRight {
+    .searchImg .blueBarRight {
         min-height: 25.5rem;
         margin-top: -25rem;
         margin-left: -9rem;
@@ -322,12 +317,12 @@ div.blueBarLeft{
         border-bottom-right-radius: 30%;
     }
 
-    .container-fluid.about div.row div.shareImg img.how-to-img {
+    .shareImg img.how-to-img {
         width: 80%;
         margin-left: 6rem;
     }
 
-    .container-fluid.about div.row div.shareImg div.blueBarRight {
+    .shareImg div.blueBarRight {
         min-height: 22.5rem;
         margin-top: -18rem;
         margin-left: -9rem;
@@ -337,11 +332,11 @@ div.blueBarLeft{
     }
 
 
-    .container-fluid.about div.row div.how-to-text {
+    .about .how-to-text {
         align-self: center;
     }
 
-    .container-fluid.about div.row div.how-to-text a.custom-btn {
+    .about a.custom-btn {
         display: inline-block !important;
     }
     
@@ -360,24 +355,24 @@ div.blueBarLeft{
 /* Responsive Download Section */
 
 @media (min-width: 1200px){
-    .downloads div.row div p.text {
+    .downloads p.text {
         max-width: 50%;
         margin: 0 auto;
         padding-bottom: 5rem;
         font-size: 22px;
     }
 
-    .downloads div.card-row div.card div.card-body a:hover {
+    .downloads a:hover {
         background-color: var(--white);
         color: var(--softBlue);
         border: 2px solid var(--softBlue);
     }
 
-    .downloads div.card-row div:nth-child(2){
+    .downloads .card-row div:nth-child(2){
         padding-top: 4rem;
     }
     
-    .downloads div.card-row div:nth-child(3){
+    .downloads .card-row div:nth-child(3){
         padding-top: 8rem;
     }
 
@@ -385,15 +380,13 @@ div.blueBarLeft{
 
 
 /* FAQs */
-.faq div.faq-dropdown div.row div p.card-title {
+.faq-dropdown p.card-title {
     font-size: 22px;
-}
-
-.faq div.faq-dropdown p {
     color: var(--darkDarkBlue);
+
 }
 
-.faq div.faq-dropdown p.card {
+.faq-dropdown p.card {
     border: none;
     color: var(--grayBlue);
     line-height: 2rem;
@@ -407,27 +400,27 @@ div.blueBarLeft{
         font-size: 22px;
     }
 
-    .faq div.faq-dropdown .row:nth-child(1) {
+    .faq-dropdown .row:nth-child(1) {
         border-top: 1px solid #e0dfdf;
     }
 
-    .faq div.faq-dropdown div.row {
+    .faq-dropdown .row {
         max-width: 60%;
         margin: 0 auto;
     }
 
-    .faq div.faq-dropdown div.row div p.card-title:hover {
+    .faq-dropdown p.card-title:hover {
         color: var(--softRed);
     }
 }
 
 
 /* Bottom Call-To-Action */
-.container-fluid.bottom-cta {
+.bottom-cta {
     background-color: var(--softBlue);    
 }
 
-.container-fluid.bottom-cta p {
+.bottom-cta p {
     color: var(--white);
     padding-top: 4.5rem;
     letter-spacing: .3rem;
@@ -435,31 +428,31 @@ div.blueBarLeft{
     font-size: 14px;
 }
 
-.container-fluid.bottom-cta h4 {
+.bottom-cta h4 {
     color: var(--white);
     padding: .5rem;
 }
 
-.container-fluid.bottom-cta form input {
+.bottom-cta input {
     width: 80%;
     border-color: transparent;
     border-radius: 5px;
     padding: .5rem 1rem;
 }
 
-.container-fluid.bottom-cta form input::placeholder {
+.bottom-cta input::placeholder {
     color: var(--grayBlue);
     font-size: 16px;
 }
 
-.container-fluid.bottom-cta form button.btn-cta {
+.bottom-cta .btn-cta {
     width: 80%;
     color: var(--white);
     background-color: var(--softRed);
     padding: .8rem;
 }
 
-.container-fluid.bottom-cta form .invalid-feedback {
+.bottom-cta .invalid-feedback {
     background-color: var(--softRed);
     color: var(--white);
     font-size: 12px;
@@ -474,85 +467,90 @@ div.blueBarLeft{
 /* Responsive Call-To-Action */
 
 @media (min-width: 1200px) {
-    .container-fluid.bottom-cta h4 {
+    .bottom-cta h4 {
         font-size: 36px;
         width: 40%;
         margin: 0 auto;
         padding-bottom: 2rem;
     }
 
-    .container-fluid.bottom-cta form {
+    .bottom-cta form {
         display: inline-flex;
     }
 
-    .container-fluid.bottom-cta form input {
+    .bottom-cta input {
         width: 25vw;
         padding: 1.5rem 2rem;
     }
 
-    .container-fluid.bottom-cta form button.btn-cta {
+    .bottom-cta .btn-cta {
         width: 9rem;
         margin-left: 1.5rem;
     }
 
-    .container-fluid.bottom-cta form .invalid-feedback {
+    .bottom-cta .invalid-feedback {
         width: 99%;
     }
 
-    .container-fluid.bottom-cta form button.btn-cta:hover {
+    .bottom-cta .btn-cta:hover {
         background-color: var(--white);
         color: var(--softRed);
-        border: 3px solid var(--softRed);
+        border: 1px solid var(--softRed);
     }
 
 }
 
 
 /* Footer */
-.footer {
+footer {
     background-color: var(--darkDarkBlue);
     color: var(--white);
     text-transform: uppercase;
     text-align: center;
 }
 
-.footer a {
+footer a {
     color: var(--white);
 }
 
-.footer ul li.nav-item {
+footer ul li.nav-item {
     line-height: 3rem;
 }
 
-.footer .attribution { 
+footer li.footer-social {
+    display: inline-flex;
+    font-size: 26px;
+    margin: 0 auto;
+}
+
+footer .attribution { 
     font-size: 11px; text-align: center; 
 }
 
-.footer .attribution a {
+footer .attribution a {
     color: hsl(228, 45%, 44%);
 }
 
 /* Responsive Footer */
 
 @media (min-width: 1200px) {
-    .footer ul li.nav-item, .footer li.footer-social {
-        line-height: 1.8rem;
-        align-content: center;
+    footer {
+        text-align: left;
     }
 
-    .footer ul li.nav-item a {
+    footer .navbar-brand img {
+        min-width: 12.5rem;
+    }
+
+    footer ul li.nav-item{
+        line-height: 1.8rem;
+    }
+
+    footer a {
         letter-spacing: 2px;
     }
 
-    .footer ul li.footer-social {
-        margin-left: 50rem;
-    }
-
-    .footer ul li.nav-item a.nav-link:hover {
-        color: var(--softRed);
-    }
-
-    .footer ul.footer-social li.nav-item a.nav-link:hover {
+    footer a.nav-link:hover {
         color: var(--softRed);
     }
 
