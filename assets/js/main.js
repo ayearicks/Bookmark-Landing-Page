@@ -76,7 +76,7 @@ $(document).ready(function(){
     });
 
     
-    // Invalid Form Submition Toggles
+    // Invalid Form Submission Toggles
     let validation = Array.prototype.filter.call(forms, function(form){
         form.addEventListener('submit', function(e){
             if (form.checkValidity() === false){
