@@ -80,8 +80,8 @@ $(document).ready(function(){
     let validation = Array.prototype.filter.call(forms, function(form){
         form.addEventListener('submit', function(e){
             if (form.checkValidity() === false){
-                event.preventDefault();
-                event.stopPropagation();
+                preventDefault();
+                stopPropagation();
             }
             form.classList.add('was-validated');
         }, false);
